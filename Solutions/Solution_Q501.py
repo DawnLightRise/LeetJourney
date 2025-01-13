@@ -1,4 +1,4 @@
-# Solution Provided by Chen Tang (2025)
+# Solution Provided by Chen Tang (January, 2025)
 # LeetCode Question: https://leetcode.com/problems/find-mode-in-binary-search-tree/description/
 
 # Definition for a binary tree node.
