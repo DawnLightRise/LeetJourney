@@ -4,13 +4,9 @@ class Solution:
             return 0
 
         n = len(nums)
-        res = nums[0]
-        tmp = max(0, nums[0])
+        dp = [-inf] * (n + 1)
 
-        for i in range(1, n):
-            tmp += nums[i]   
-            res = max(res, tmp)
-            if tmp < 0:
-                tmp = 0
-
-        return res
+        for i in range(n):
+            dp[i+1] = max(dp[i] + nums[i], nums[i])
+        
+        return max(dp[1:])
